@@ -1,6 +1,6 @@
-FROM jenkins/jenkins:2.437-jdk17
+FROM jenkins/jenkins:2.439-jdk17
 USER root
-RUN apt-get update && apt-get install -y lsb-release vim
+RUN apt-get update && apt-get install -y lsb-release vim ranger
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
     https://download.docker.com/linux/debian/gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) \
