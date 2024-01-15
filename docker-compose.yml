@@ -15,6 +15,7 @@ services:
     build:
       context: .
     ports:
+      - 65443:8080
       - 8083:8080
       - 50003:50000
     environment:
